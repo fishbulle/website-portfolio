@@ -10,13 +10,14 @@
 
 #intro-text {
     color: var(--faded-pink);
-    font-size: 5em;
+    font-size: 86px;
     font-family: 'NTR';
 }
 
 #intro-name {
     font-weight: bold;
     color: var(--lightest-pink);
+    font-size: 86px;
 }
 
 .intro-subtitle {
@@ -54,3 +55,38 @@
     vertical-align: middle;
     font-size: 1.2em;
 }
+
+@media only screen and (max-width: 600px) {  
+    #intro {
+      min-height: unset;
+      padding-left: unset;
+      margin: 0;
+      align-items: center;
+    }
+  
+    #intro-text {
+      font-size: 46px;
+    }
+    #intro-name {
+      font-size: 46px;
+    }
+
+    .intro-subtitle {
+      margin: 0;
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .intro-desc {
+      font-size: 18px;
+      text-align: center;
+      max-width: unset;
+      padding-bottom: 40px;
+    }
+  
+    .intro-contact {
+      font-size: 16px;
+      align-self: center;
+      margin-left: 30%;
+    }
+  }
