@@ -1,6 +1,7 @@
 import './App.css'
 import "./styles/Global.css"
 import Intro from './components/Intro'
+import { Cat } from './components/Cat'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <div className="App">
         <div id="content">
+          <Cat />
           <Intro />
         </div>
       </div>
