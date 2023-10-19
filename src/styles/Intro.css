@@ -1,0 +1,56 @@
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-top: 10%;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+#intro-text {
+    color: var(--faded-pink);
+    font-size: 5em;
+    font-family: 'NTR';
+}
+
+#intro-name {
+    font-weight: bold;
+    color: var(--lightest-pink);
+}
+
+.intro-subtitle {
+    margin-top: -36px;
+    font-family: "NTR", sans-serif;
+    color: var(--pink);
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.intro-desc {
+    color: var(--pink);
+    font-family: "NTR", sans-serif;
+    font-size: 22px;
+    max-width: 40%;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.intro-contact {
+    font-family: "NTR", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid var(--lightest-pink);
+    border-radius: 4px;
+}
+
+.intro-contact:hover {
+    background-color: var(--transparent-mauve);
+}
+
+#envelope {
+    vertical-align: middle;
+    font-size: 1.2em;
+}

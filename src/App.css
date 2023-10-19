@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "NTR";
+  font-weight: 200;
+  font-display: fallback;
+  src: url("/fonts/NTR-Regular.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  background-color: var(--mauve);
+  display: flex;
+  flex-direction: row;
+}
+
+#content {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+::selection {
+  background-color: var(--pink);
+}
+
+a {
+  color: var(--lightest-pink);
+  text-decoration: none;
+}
