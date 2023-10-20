@@ -3,6 +3,7 @@ import '../styles/SidebarNav.css'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email';
+import SlideIn from './SlideIn';
 
 const isMobile = window.innerWidth < 600;
 
@@ -19,16 +20,18 @@ function SidebarNav() {
             <div className="sidebar-nav">
                 {!isMobile && (
                     <Sidenav
-                        expanded={}
+                        expanded
                         defaultOpenKeys={[ "3", "4" ]}
                         appearance={"subtle"}
                     >
                         <Sidenav.Body>
                             <div className="sidebar-links">
                                 {links.map((link, i) => (
-                                    <FadeInSection delay={`${i + 1}00ms`}>
+                                    <SlideIn
+                                        checked
+                                        timeout={i + 2000}>
                                         <div>{link}</div>
-                                    </FadeInSection>
+                                    </SlideIn>
                                 ))}
                             </div>
                         </Sidenav.Body>

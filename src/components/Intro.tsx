@@ -1,6 +1,7 @@
 import '../styles/Intro.css'
-import { BsEnvelopeHeart } from 'react-icons/bs'
+import EmailIcon from '@mui/icons-material/Email'
 import Typewriter from 'typewriter-effect'
+import SlideIn from './SlideIn'
 
 function Intro() {
 
@@ -18,16 +19,28 @@ function Intro() {
                         cursor: '<span id="intro-name">|</span>'
                     }}
                 />
-                <div className="intro-subtitle">I like to write code.</div>
-                <div className="intro-desc">
-                    I'm a full stack developer based in southern Sweden.
-                </div>
-                <div className="intro-contact">
-                    <a href="mailto:linaemalmros@gmail.com">
-                        <BsEnvelopeHeart id="envelope" />
-                        <span> reach out</span>
-                    </a>
-                </div>
+                <SlideIn
+                    timeout={1500}
+                    checked>
+                    <div className="intro-subtitle">I like to write code.</div>
+                </SlideIn>
+                <SlideIn
+                    timeout={1500}
+                    checked>
+                    <div className="intro-desc">
+                        I'm a full stack developer based in southern Sweden.
+                    </div>
+                </SlideIn>
+                <SlideIn
+                    timeout={1500}
+                    checked>
+                    <div className="intro-contact">
+                        <a href="mailto:linaemalmros@gmail.com">
+                            <EmailIcon id="envelope" />
+                            <span> reach out</span>
+                        </a>
+                    </div>
+                </SlideIn>
             </div>
         </>
     )
