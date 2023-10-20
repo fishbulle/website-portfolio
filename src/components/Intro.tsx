@@ -1,6 +1,6 @@
 import '../styles/Intro.css'
 import { BsEnvelopeHeart } from 'react-icons/bs'
-import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect'
 
 function Intro() {
 
@@ -15,7 +15,7 @@ function Intro() {
                             .start()
                     }}
                     options={{
-                        cursor: '<span id="intro-text">|</span>'
+                        cursor: '<span id="intro-name">|</span>'
                     }}
                 />
                 <div className="intro-subtitle">I like to write code.</div>
