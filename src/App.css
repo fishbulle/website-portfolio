@@ -22,10 +22,5 @@ html {
 }
 
 ::selection {
-  background-color: var(--pink);
-}
-
-a {
-  color: var(--lightest-pink);
-  text-decoration: none;
+  background-color: var(--transparent-mauve);
 }

@@ -11,12 +11,9 @@ function Intro() {
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
-                            .typeString('<span id="intro-text">hi, <span id="intro-name">angelina</span> here.</span>')
+                            .typeString('hi, <span id="intro-name">angelina</span> here.')
                             .pauseFor(900)
                             .start()
-                    }}
-                    options={{
-                        cursor: '<span id="intro-name">|</span>'
                     }}
                 />
                 <SlideIn
