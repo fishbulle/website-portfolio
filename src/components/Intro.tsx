@@ -25,7 +25,9 @@ function Intro() {
                     timeout={1500}
                     checked>
                     <div className="intro-desc">
-                        I'm a full stack developer based in southern Sweden.
+                        I'm a full stack developer based in southern Sweden. 
+                        With a keen eye for detail, I'm happy to contribute in a team 
+                        and won't back down from a challenge since I'm always eager to learn.
                     </div>
                 </SlideIn>
                 <SlideIn
