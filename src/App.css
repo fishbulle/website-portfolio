@@ -24,3 +24,43 @@ html {
 ::selection {
   background-color: var(--transparent-mauve);
 }
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15%;
+  padding-top: 7%;
+  line-height: 1.5;
+}
+
+.section-header {
+  display: flex;
+  padding-bottom: 42px;
+  width: 100vw;
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  width: 300px;
+  margin-top: 39px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--light-mauve);
+}
+
+.section-title {
+  font-family: "NTR", sans-serif;
+  color: var(--lightest-pink);
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.section-content {
+  color: var(--faded-pink);
+  font-family: "NTR", sans-serif;
+  font-size: 22px;
+  max-width: 40%;
+  text-align: justify;
+}

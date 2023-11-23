@@ -8,7 +8,6 @@ interface Props {
 
 function SlideIn({ children, checked, timeout }: Props) {
 
-
     return (
         <Slide direction="up" in={checked} timeout={timeout} mountOnEnter unmountOnExit>
             {children}
